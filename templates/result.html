@@ -2,8 +2,6 @@
 <html>
 <head>
 	<title></title>
-   <!--  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}"> -->
-   <!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="SMS Spam Filter  Spam  Ham">
@@ -14,8 +12,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}"> -->
@@ -104,9 +101,9 @@
 
 		
 	{% if prediction == 1%}
-	<h2 style="color:red;" align="center">Spam</h2>
+	<h2 style="color:red;" align="center">Negatif</h2>
 	{% elif prediction == 0%}
-	<h2 style="color:blue;" align="center">Not a Spam (It is a Ham)</h2>
+	<h2 style="color:blue;" align="center">Not a Negatif (this review is positif)</h2>
 	{% endif %}
 
 	</div>
